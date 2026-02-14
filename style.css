@@ -1,0 +1,351 @@
+body{  
+margin:0;  
+font-family:Arial;  
+background:#f4f4f4;  
+}  
+
+/* HEADER */  
+header{
+    position:relative;
+    background-image: url('https://i.ibb.co/9kHnDQ94/kashmir-winter-tour.jpg'); /* aapki image link */
+    background-size: cover;       /* poora cover kare */
+    background-position: center;  /* center me rahe */
+    background-repeat: no-repeat; /* repeat na ho */
+    color:white;
+    text-align:center;
+    padding:20px 0 40px;
+    overflow:hidden;
+}
+
+.header-inner{  
+display:flex;  
+justify-content:center;  
+align-items:center;  
+gap:10px;  
+position:relative;  
+z-index:2;  
+}  
+
+.logo{  
+width:120px
+}  
+
+
+.app-name{  
+animation:colorChange 3s infinite;  
+}  
+
+@keyframes colorChange{  
+0%{color:#ffc107;}  
+50%{color:#00c6ff;}  
+100%{color:#ff00cc;}  
+}  
+
+/* SNOW */  
+.snow::before{  
+content:"❄ ❄ ❄ ❄relentro ❄ ❄ ❄ ❄ ❄";  
+position:center;  
+width:100%;  
+animation:snowfall 6s linear infinite;  
+}  
+@keyframes snowfall{  
+0%{transform:translateY(-100%);}  
+100%{transform:translateY(100%);}  
+}
+
+.snow-ground{  
+position:absolute;  
+bottom:0;  
+width:100%;  
+height:20px;  
+background :white;   
+}  
+
+/* SEARCH */  
+.search-box{  
+padding:15px;  
+}  
+
+.search-box input{  
+width:100%;  
+padding:10px;  
+border-radius:20px;  
+border:1px solid #ccc;  
+}  
+
+/* BANNER */  
+.banner{  
+position:relative;  
+margin:15px;  
+border-radius:15px;  
+overflow:hidden;  
+}  
+
+.banner-media{  
+width:100%;  
+height:180px;  
+object-fit:cover;  
+}  
+
+.banner-text{  
+position:absolute;  
+bottom:20px;  
+left:20px;  
+color:white;  
+}  
+
+/* CATEGORIES */  
+.categories{  
+display:flex;  
+overflow:auto;  
+gap:10px;  
+padding:15px;  
+}  
+
+.categories button{  
+padding:8px 15px;  
+border-radius:20px;  
+border:1px solid #ccc;  
+background:white;  
+}  
+
+/* GALLERY */  
+.gallery{  
+padding:15px;  
+}  
+
+.media-row{  
+display:flex;  
+overflow:auto;  
+gap:15px;  
+}  
+
+.media-row img, .media-row video{  
+width:200px;  
+border-radius:15px;  
+}  
+.about{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.about h2{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffc107; /* highlight */
+}
+
+.about p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about a{
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about a:hover{
+    color: #ffc107;
+}
+
+
+/* PLANS */  
+.plans{  
+display:flex;  
+gap:15px;  
+padding:15px;  
+overflow:auto;  
+}  
+
+.plan-card{  
+min-width:200px;  
+background:white;  
+border-radius:15px;  
+overflow:hidden;  
+box-shadow:0 5px 15px rgba(0,0,0,0.1);  
+text-align:center;  
+cursor:pointer;  
+}  
+
+.plan-card img{  
+width:100%;  
+height:130px;  
+object-fit:cover;  
+}  
+
+.hidden{  
+display:none;  
+}  
+
+#planDetails{  
+padding:20px;  
+background:white;  
+margin:15px;  
+border-radius:15px;  
+}  
+
+#detailImg{  
+width:100%;  
+border-radius:10px;  
+margin-bottom:10px;  
+}  
+
+input{  
+display:block;  
+width:80%;  
+margin:10px auto;  
+padding:10px;  
+}  
+
+button{  
+padding:10px 20px;  
+border:none;  
+background:#ffc107;  
+border-radius:10px;  
+cursor:pointer;  
+}  
+
+/* ===================== */
+/* NEW FOOTER DESIGN */
+/* ===================== */
+
+.footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin-top:40px;
+}
+
+.owner-section{
+    margin-bottom:15px;
+}
+
+.owner-img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid gold;
+    margin-bottom:10px;
+}
+
+..social-links{
+    margin:15px 0;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.social-links a img{
+    width:35px; /* icon size */
+    height:35px;
+    transition:0.3s;
+}
+
+.social-links a img:hover{
+    transform:scale(1.2);
+}
+}
+
+.copyright{
+    font-size:12px;
+    opacity:0.7;
+}
+/*short style*/
+
+.short-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* full mobile screen height */
+    overflow: hidden;
+}
+
+.shorts-section {
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+.shorts-slider {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.shorts-slider iframe {
+    flex: 0 0 auto;
+    width: 180px;   /* chhota size */
+    height: 320px;  /* 9:16 ratio */
+    border-radius: 15px;
+    scroll-snap-align: start;
+    border: none;
+}
+/*animation background REELS */
+.shorts-section {
+    padding: 20px;
+    color: white;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #000000);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    border-radius: 15px;
+}
+
+/* Animation Keyframes */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*style bCKGROUNGD REELA*/
+
+.shorts-section {
+    padding: 25px;
+    margin: 20px;
+    border: 4px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(#111, #111) padding-box,
+                linear-gradient(45deg, #d4af37, #ffcc00, #b8860b, #ffd700) border-box;
+    animation: goldBorder 4s linear infinite;
+}
+
+/* Animated Gold Border */
+@keyframes goldBorder {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(20deg); }
+}
+
+/* Kashmiri Style Title */
+.kashmir-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffd700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* Decorative Lines (Kashmiri feel) */
+.kashmir-title::before,
+.kashmir-title::after {
+    content: "✽ ✽ ✽";
+    display: block;
+    font-size: 14px;
+    color: #ffcc00;
+    margin: 5px 0;
+}

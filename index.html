@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relentro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+<!--
+<div class="snow"></div> -->
+<div class="header-inner">
+<img src="https://i.ibb.co/606MGTMS/20260213-173309.png" class="logo">
+<h1 class="app-name">Relentro</h1>
+</div>
+
+<div class="snow-ground"></div>
+</header>
+<!-- ABOUT SECTION -->
+<section class="about">
+  <h2>WELLCOMEB To Relentro Studio</h2>
+  <p>
+    🎥 Relentro Studio | Kashmir 📍 <br>
+    We specialize in Weddings, Reels, Photoshoots & YouTube Videos. <br>
+    Book your personalized shoot plan via WhatsApp: <a href="https://wa.me/917051932522" target="_blank">+917051932522</a> <br>
+    Email: <a href="mailto:aamirnisarsheikh6027@gmail.com">aamirnisarsheikh6027@gmail.com</a>
+  </p>
+</section>
+
+
+<!-- SEARCH -->
+<div class="search-box">
+<input type="text" placeholder="Search services...">
+</div>
+
+<!-- ADVERTISEMENT (IMAGE / VIDEO) -->
+<section class="banner">
+
+<!-- IMAGE BANNER -->
+<img src="https://i.ibb.co/DgWSMkxK/29154720230316074814.jpg" class="banner-media">
+
+<!-- VIDEO BANNER OPTION -->
+
+<!--<iframe src="https://www.youtube.com/embed/LuJdvwm8-0k?si=WtjW1_ZX_DxcR-lp </iframe>"<video autoplay muted loop class="banner-media">
+<source src="banner.mp4" type="video/mp4">
+</video>
+-->
+
+
+<div class="banner-text">
+<h3>Special Winter Offer</h3>
+<button>KASHMIR</button>
+</div>
+
+</section>
+
+<!-- CATEGORIES SLIDER -->
+<section class="categories">
+<button>Wedding</button>
+<button>Reels</button>
+<button>Photoshoot</button>
+<button>YouTube</button>
+<button>Events</button>
+</section>
+
+<!-- PLANS -->
+<section class="plans">
+
+<div class="plan-card" onclick="openPlan(
+'Basic Plan',
+'₹200',
+'Instagram Reels (30 sec each)|Personal Photoshoot |Short & Fun Session',
+'https://i.ibb.co/V0Vr8c8W/IMG-20260213-WA0005.jpg'
+)">
+<img src="https://i.ibb.co/V0Vr8c8W/IMG-20260213-WA0005.jpg">
+<h3>₹200 Basic</h3>
+</div>
+
+<div class="plan-card" onclick="openPlan(
+'Basic Plan',
+'₹599',
+'3 Reels | 30 Sec Shoot | Photoshoot',
+'https://i.ibb.co/V0Vr8c8W/IMG-20260213-WA0005.jpg'
+)">
+<img src="https://i.ibb.co/V0Vr8c8W/IMG-20260213-WA0005.jpg">
+<h3>₹599 Basic</h3>
+</div>
+
+<div class="plan-card" onclick="openPlan(
+'Basic Plan',
+'₹599',
+'3 Reels | 30 Sec Shoot | Photoshoot',
+'https://i.ibb.co/tNyhdqK/pexels-imadclicks-15335036.jpg'
+)">
+<img src="https://i.ibb.co/tNyhdqK/pexels-imadclicks-15335036.jpg">
+<h3>₹599 Basic</h3>
+</div>
+
+<div class="plan-card" onclick="openPlan('Standard Plan','₹499','reels |video| photo | 10 Reels | Photoshoot')">
+<img src="https://i.ibb.co/tNyhdqK/pexels-imadclicks-15335036.jpg">
+<h3>₹499 Standard</h3>
+</div>
+
+</section>
+
+<!-- PLAN DETAILS -->
+<section id="planDetails" class="hidden">
+<img id="detailImg">
+<h2 id="detailTitle"></h2>
+<p id="detailDesc"></p>
+<button onclick="showForm()">Order</button>
+</section>
+
+<!-- CUSTOMER FORM -->
+<section id="formSection" class="hidden">
+<input type="text" id="name" placeholder="Customer Name">
+<input type="text" id="phone" placeholder="Contact Number">
+<input type="text" id="whatsapp" placeholder="WhatsApp Number">
+<input type="email" id="email" placeholder="Email Address">
+<button onclick="submitOrder()">Submit</button>
+</section>
+
+
+
+<!-- GALLERY -->
+<section class="gallery">
+
+<h2>Our Work</h2>
+
+<div class="media-row">
+
+<img src="https://i.ibb.co/DgWSMkxK/29154720230316074814.jpg">
+<img src="https://i.ibb.co/DgWSMkxK/29154720230316074814.jpg">
+
+<video controls>
+<source src="reel1.mp4" type="video/mp4">
+</video>
+
+<iframe width="200" height="150" 
+    src="https://www.youtube.com/embed/wGCwkcOV43Y?si" 
+    frameborder="0" allowfullscreen>
+</iframe>
+
+</div>
+
+</section>
+
+<!-- PLAN DETAILS -->
+<!--
+<section id="planDetails" class="hidden">
+<img id="detailImg">
+<h2 id="detailTitle"></h2>
+<p id="detailDesc"></p>
+<button onclick="showForm()">Order</button>
+</section>
+-->
+
+<!-- CUSTOMER FORM -->
+
+<!--
+<section id="formSection" class="hidden">
+<input type="text" id="name" placeholder="Customer Name">
+<input type="text" id="phone" placeholder="Contact Number">
+<input type="text" id="whatsapp" placeholder="WhatsApp Number">
+<input type="email" id="email" placeholder="Email Address">
+<button onclick="submitOrder()">Submit</button>
+</section> 
+-->
+
+<!--footer -->
+<!--
+<h3>Aamir Nisar Sheikh</h3>
+<p>Kashmir Only Services</p>
+<p>Call/WhatsApp: 7051932522</p>
+</footer>
+-->
+
+<!--short sectuon reel -->
+
+</section>
+
+<section class="shorts-section">
+  <h2 class="kashmir-title">Our Reels</h2>
+
+  <div class="shorts-slider">
+    <iframe src="https://www.youtube.com/embed/ZgAR63Hyct0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/MNkj0Z4wB5M"
+    allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/BdK9AMJuPbA" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/FltLrhltldY" allowfullscreen></iframe>
+  </div>
+</section>
+
+<script src="script.js"></script>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="owner-section">
+        <img src="https://i.ibb.co/d4TfH2g3/IMG-20260213-WA0003.jpg" class="owner-img">
+        <h3>Aamir Nisar Sheikh</h3>
+        <p>Professional Photographer | Kashmir Only</p>
+    </div>
+
+<div class="social-links">
+    <a href="https://www.instagram.com/relentro_kashmir?igsh=MXMxbHY5bjRyanA0cw=" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/share/1D23zRQhPz/" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="Facebook">
+    </a>
+    <a href="https://youtube.com/@relentro?si=BLc44SB5S-FGNfwL" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube">
+    </a>
+    <a href="https://wa.me/917051932522" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp.png" alt="WhatsApp">
+    </a>
+</div>
+
+    <p class="copyright">
+        © 2026 Relentro Done | All Rights Reserved
+    </p>
+</footer>
+</body>
+</html>
